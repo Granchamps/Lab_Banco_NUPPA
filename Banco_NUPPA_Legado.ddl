@@ -89,8 +89,8 @@ AND cot_prc_min >= 0
 AND cot_prc_max >= cot_prc_min
 AND cot_prc_med >= cot_prc_min
 AND cot_prc_med <= cot_prc_max
-AND cot_prc_mediano >= cot_prc_min
-AND cot_prc_mediano <= cot_prc_max)
+AND cot_prc_mediana >= cot_prc_min
+AND cot_prc_mediana <= cot_prc_max)
 ;
 ALTER TABLE COTACAO 
     ADD CONSTRAINT pk_cot PRIMARY KEY ( cot_id ) ;
