@@ -1,4 +1,5 @@
 -- Consultas estratégicas no Banco de Dados NUPPA
+-- Allan Granchamps Fernandes Vieira
 
 -- Quais produtos possuem maior preço médio em cada categoria
 
