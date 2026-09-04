@@ -186,6 +186,19 @@ INSERT INTO PRODUTO_APRESENTACAO (prd_id, tap_id, pap_qtd, umd_id, pap_atv) VALU
 
 SELECT * FROM PRODUTO_APRESENTACAO
 
+ALTER TABLE cotacao MODIFY cot_prc_comum NULL;
+
+ALTER TABLE cotacao MODIFY cot_prc_min NULL;
+
+ALTER TABLE cotacao MODIFY cot_prc_max NULL;
+
+ALTER TABLE cotacao MODIFY cot_prc_med NULL;
+
+ALTER TABLE cotacao MODIFY cot_prc_mediana NULL;
+
+TRUNCATE TABLE cotacao;
+
+select * from cotacao
 
 INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (1, 1, NULL, 32, 32, 32, 32);
 INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (1, 2, NULL, 60, 60, 60, 60);
@@ -687,7 +700,7 @@ INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, co
 INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (13, 26, 140, 80, 170, 138, 140);
 INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (13, 27, 60, 50, 70, 59, 60);
 INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (13, 28, NULL, 80, 120, 96.67, 90);
-#DIV/0!
+INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (13, 29, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (13, 30, 70, 60, 80, 70, 70);
 INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (13, 31, 90, 80, 100, 89, 90);
 INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (13, 32, 70, 45, 100, 68.6, 70);
@@ -819,7 +832,7 @@ INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, co
 INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (16, 38, NULL, 50, 70, 60, 60);
 INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (16, 39, NULL, 55, 55, 55, 55);
 INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (16, 40, NULL, 55, 60, 57.5, 57.5);
-INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (17, 1, 60, 60, 80, 66666667, 60);
+INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (17, 1, 60, 60, 80, 66.67, 60);
 INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (17, 2, 84, 72, 84, 80, 84);
 INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (17, 3, NULL, 36, 48, 42, 42);
 INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (17, 4, 30, 30, 30, 30, 30);
@@ -833,26 +846,26 @@ INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, co
 INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (17, 12, NULL, 78, 96, 86, 84);
 INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (17, 13, 60, 60, 78, 66, 60);
 INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (17, 14, 84, 84, 96, 88, 84);
-INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (17, 15, 60, 60, 70, 63333333, 60);
+INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (17, 15, 60, 60, 70, 63.33, 60);
 INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (17, 16, 54, 48, 54, 52, 54);
-INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (17, 17, 5, 5, 6, 53333333, 5);
-INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (17, 18, 25, 20, 25, 23333333, 25);
+INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (17, 17, 5, 5, 6, 53.33, 5);
+INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (17, 18, 25, 20, 25, 23.33, 25);
 INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (17, 19, NULL, 25, 32, 29, 30);
 INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (17, 20, NULL, 85, 90, 87.5, 87.5);
 INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (17, 21, 70, 60, 70, 67.5, 70);
 INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (17, 22, 65, 45, 65, 56.25, 57.5);
 INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (17, 23, 50, 40, 50, 47.5, 50);
-INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (17, 24, 100, 90, 100, 96666667, 100);
+INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (17, 24, 100, 90, 100, 96.67, 100);
 INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (17, 25, 110, 110, 150, 128.75, 127.5);
 INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (17, 26, 170, 100, 170, 135, 135);
 INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (17, 27, 50, 50, 60, 55, 55);
-INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (17, 28, 90, 80, 90, 86666667, 90);
+INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (17, 28, 90, 80, 90, 86.67, 90);
 INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (17, 29, 75, 75, 75, 75, 75);
-INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (17, 30, NULL, 50, 85, 68333333, 70);
+INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (17, 30, NULL, 50, 85, 68.33, 70);
 INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (17, 31, 80, 80, 150, 100, 85);
 INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (17, 32, 50, 50, 65, 56, 55);
 INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (17, 33, 120, 100, 120, 112.5, 115);
-INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (17, 34, 140, 80, 140, 11166667, 105);
+INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (17, 34, 140, 80, 140, 111.67, 105);
 INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (17, 35, 200, 170, 200, 190, 200);
 INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (17, 36, NULL, 170, 170, 170, 170);
 INSERT INTO COTACAO (blt_id, pap_id, cot_prc_comum, cot_prc_min, cot_prc_max, cot_prc_med, cot_prc_mediana) VALUES (17, 37, NULL, 75, 75, 75, 75);
