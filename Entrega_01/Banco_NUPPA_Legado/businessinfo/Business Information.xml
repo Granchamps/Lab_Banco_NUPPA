@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="6ADA115A-6A34-BADD-F6A8-A490A46A7280">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-29 23:04:22 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

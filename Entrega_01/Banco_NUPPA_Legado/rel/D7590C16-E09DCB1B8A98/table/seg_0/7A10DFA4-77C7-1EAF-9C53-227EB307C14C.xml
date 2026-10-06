@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7A10DFA4-77C7-1EAF-9C53-227EB307C14C" name="PRODUTO">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-29 23:41:33 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="prd_id" id="9E1BC302-EFA2-AB60-1048-C4D8BA866DC2">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-29 23:46:53 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>ck_prd_nn_01</notNullConstraintName>
+</Column>
+<Column name="cat_id" id="C3DD49A0-2C9A-1482-1CD2-A86E8617A04F">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-29 23:46:53 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>ck_prd_nn_02</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="644A9984-9F03-A64E-AE75-158E8B648931" referredColumn="3710384E-68E8-FEFB-365A-3F0880097A43"/>
+</associations>
+</Column>
+<Column name="prd_nome" id="DF6E2A7D-2FF0-AE80-DBC1-7DB22555DA14">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-29 23:46:53 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>ck_prd_nn_03</notNullConstraintName>
+</Column>
+<Column name="prd_var" id="70068E23-D800-EC19-C5D0-36E823FF7D61">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-29 23:46:53 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prd_atv" id="CFA85B9C-AD59-1A81-16B3-F80ECE7BC9B1">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-29 23:51:59 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>ck_prd_nn_04</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A7BB6480-66F4-FDD8-D383-BF52E9CDD414" name="pk_prd">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-29 23:46:53 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9E1BC302-EFA2-AB60-1048-C4D8BA866DC2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8DE6B0DD-3301-A63E-3F4C-5134209D97FB" name="uk_prd_cat_nom_var">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-31 16:28:11 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C3DD49A0-2C9A-1482-1CD2-A86E8617A04F"/>
+<colUsage columnID="DF6E2A7D-2FF0-AE80-DBC1-7DB22555DA14"/>
+<colUsage columnID="70068E23-D800-EC19-C5D0-36E823FF7D61"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7D7A44B4-9C32-B962-4270-3C46620F3DC2" name="fk_prd_cat">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-29 23:48:22 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C3DD49A0-2C9A-1482-1CD2-A86E8617A04F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="ck_prd_atv" directorySegmentName="seg_0" id="CA314C7B-D75D-5828-25A4-E01DEEBA0147">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-31 16:43:37 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<rule><![CDATA[prd_atv in (0,1)]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

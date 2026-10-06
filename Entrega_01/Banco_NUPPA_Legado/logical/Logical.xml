@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="61B80A95-0208-0C16-A9F2-55A378D1BE9F" mainViewID="AE701306-5150-A8A5-2C5D-0D432D5D0C8E">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-29 23:04:21 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

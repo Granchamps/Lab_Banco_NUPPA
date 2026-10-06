@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="644A9984-9F03-A64E-AE75-158E8B648931" containerWithKeyObject="7A10DFA4-77C7-1EAF-9C53-227EB307C14C" localFKIndex="7D7A44B4-9C32-B962-4270-3C46620F3DC2" name="fk_prd_cat">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-29 23:48:22 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<referredTableLongName>CATEGORIA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A2AB3D6F-A344-660E-A51E-F7F0D7124628</referredTableID>
+<keyObject>B52BFB0F-9D82-0D16-06E8-677C5152605F</keyObject>
+<referredKeyID>B52BFB0F-9D82-0D16-06E8-677C5152605F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cat_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

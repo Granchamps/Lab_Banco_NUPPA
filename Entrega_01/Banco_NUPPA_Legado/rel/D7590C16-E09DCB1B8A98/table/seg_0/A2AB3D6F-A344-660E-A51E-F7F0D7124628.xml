@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A2AB3D6F-A344-660E-A51E-F7F0D7124628" name="CATEGORIA">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-29 23:20:16 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cat_id" id="3710384E-68E8-FEFB-365A-3F0880097A43">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-29 23:36:29 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>ck_cat_nn_01</notNullConstraintName>
+</Column>
+<Column name="grp_id" id="05730DEC-658E-CE20-8E5A-A56D6FC08A43">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-29 23:36:29 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>ck_cat_nn_02</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="32DACD77-B0DB-70AF-28CF-AB9D84C5E605" referredColumn="CF5F4EA2-D513-216D-405D-0B1AADAD2B41"/>
+</associations>
+</Column>
+<Column name="cat_nome" id="65589FF7-4FBD-DD3C-AE43-F03402083857">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-29 23:36:29 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>ck_cat_nn_03</notNullConstraintName>
+</Column>
+<Column name="cat_desc" id="7A39028C-20A5-FE0E-35D5-6BA5B8C8D36A">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-29 23:36:29 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B52BFB0F-9D82-0D16-06E8-677C5152605F" name="pk_cat">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-29 23:36:29 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3710384E-68E8-FEFB-365A-3F0880097A43"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="47150F4B-740A-3598-B144-12945A84CAC2" name="uk_cat_grp_nome">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-31 16:24:47 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="05730DEC-658E-CE20-8E5A-A56D6FC08A43"/>
+<colUsage columnID="65589FF7-4FBD-DD3C-AE43-F03402083857"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="813A5E12-3253-F002-AAE0-5DB1A176D15C" name="fk_cat_grp">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-29 23:40:04 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="05730DEC-658E-CE20-8E5A-A56D6FC08A43"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

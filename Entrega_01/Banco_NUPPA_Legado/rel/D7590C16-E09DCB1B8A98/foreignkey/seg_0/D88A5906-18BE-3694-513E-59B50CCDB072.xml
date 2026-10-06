@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D88A5906-18BE-3694-513E-59B50CCDB072" containerWithKeyObject="6CA5F302-D7B9-E37A-7C74-C7FF944D4103" localFKIndex="B2B529EA-FEAB-F246-C192-3C5D74DB540E" name="fk_cot_blt">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-30 00:56:48 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<referredTableLongName>BOLETIM</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8A5A72EE-56F0-2646-49DE-4A817F356B2C</referredTableID>
+<keyObject>AF788E5B-9784-57FE-E377-661559220DD9</keyObject>
+<referredKeyID>AF788E5B-9784-57FE-E377-661559220DD9</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>blt_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

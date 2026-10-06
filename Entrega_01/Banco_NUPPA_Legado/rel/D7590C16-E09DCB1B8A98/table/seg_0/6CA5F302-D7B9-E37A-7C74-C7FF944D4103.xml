@@ -1,0 +1,181 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6CA5F302-D7B9-E37A-7C74-C7FF944D4103" name="COTACAO">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-30 00:50:29 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<ordsAlias>table_8</ordsAlias>
+<useDDLTransformationScript>true</useDDLTransformationScript>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cot_id" id="711B1CC3-BF10-08DB-0232-4D9EC3D2D2DA">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-30 00:56:48 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>ck_cot_nn_01</notNullConstraintName>
+</Column>
+<Column name="blt_id" id="6C1A8E11-B338-2198-3325-FB8E7A7E8AD4">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-30 00:56:48 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>ck_cot_nn_02</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="D88A5906-18BE-3694-513E-59B50CCDB072" referredColumn="116CB675-6282-3E38-5F84-159B9985CA16"/>
+</associations>
+</Column>
+<Column name="pap_id" id="2A342084-A160-5D1D-AF99-F8FD368D95F9">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-30 00:56:48 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>ck_cot_nn_03</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="8B70F092-D24C-CCBC-BE33-2ACF4E01E6A3" referredColumn="77CAEF23-C290-642A-FC56-131F5AD1DCB9"/>
+</associations>
+</Column>
+<Column name="cot_prc_comum" id="B6D5AD23-C4D7-791A-297D-F25BA3C36E6C">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-30 00:56:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[preço comum]]></commentInRDBMS>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cot_prc_min" id="5548E7E2-3E38-9055-AC32-A4D051F30E7F">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-30 00:56:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[preço minimo]]></commentInRDBMS>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>ck_cot_nn_04</notNullConstraintName>
+</Column>
+<Column name="cot_prc_max" id="85262C99-8029-6C9B-B69F-25B2E2ADB1A9">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-30 00:56:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[preço maximo]]></commentInRDBMS>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>ck_cot_nn_05</notNullConstraintName>
+</Column>
+<Column name="cot_prc_med" id="C2A7F485-DC15-732C-833C-F3466F36B8DF">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-30 00:56:48 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>ck_cot_nn_06</notNullConstraintName>
+</Column>
+<Column name="cot_prc_mediana" id="ED876442-5B95-4411-2E78-C88558206DE6">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-30 00:56:48 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>ck_cot_nn_07</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A173E0E6-45E2-4CFF-40C4-974DC4D740F3" name="pk_cot">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-30 00:56:48 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="711B1CC3-BF10-08DB-0232-4D9EC3D2D2DA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FE093FC1-BF38-D527-66E8-552E0E9D9EE2" name="uk_cot_blt_pap">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-31 16:35:17 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6C1A8E11-B338-2198-3325-FB8E7A7E8AD4"/>
+<colUsage columnID="2A342084-A160-5D1D-AF99-F8FD368D95F9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B2B529EA-FEAB-F246-C192-3C5D74DB540E" name="fk_cot_blt">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-30 00:56:48 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6C1A8E11-B338-2198-3325-FB8E7A7E8AD4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D100D1F0-2943-AFD4-EDCD-9729D4633CB3" name="fk_cot_pap">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-30 00:56:48 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2A342084-A160-5D1D-AF99-F8FD368D95F9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="ck_cot_prc" directorySegmentName="seg_0" id="A6F30B8A-88A0-8B18-5CF6-09DED0A8A5C4">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-31 16:49:00 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<rule><![CDATA[(cot_prc_comum IS NULL OR cot_prc_comum >= 0)
+AND cot_prc_min >= 0
+AND cot_prc_max >= cot_prc_min
+AND cot_prc_med >= cot_prc_min
+AND cot_prc_med <= cot_prc_max
+AND cot_prc_mediana >= cot_prc_min
+AND cot_prc_mediana <= cot_prc_max]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

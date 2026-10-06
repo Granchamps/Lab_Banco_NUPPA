@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="09733A8C-5588-A98C-E074-8E36024DB09F" name="TIPO_APRESENTACAO">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-30 00:26:34 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="tap_id" id="D5D4D765-D07B-AABB-FB41-52CFF9061A7B">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-30 00:27:42 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>ck_tap_nn_01</notNullConstraintName>
+</Column>
+<Column name="tap_nome" id="757F86A5-F1DA-0CFB-E1BA-4F4C7B4FB886">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-30 00:27:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[caixa, duzia, maço, etc]]></commentInRDBMS>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>ck_tap_nn_02</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="08C095D3-0C26-E869-778F-33EB4ABF117F" name="pk_tap">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-30 00:27:42 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D5D4D765-D07B-AABB-FB41-52CFF9061A7B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

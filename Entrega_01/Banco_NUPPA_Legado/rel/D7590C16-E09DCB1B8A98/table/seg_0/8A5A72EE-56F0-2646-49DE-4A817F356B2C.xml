@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8A5A72EE-56F0-2646-49DE-4A817F356B2C" name="BOLETIM">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-30 00:42:27 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<useDDLTransformationScript>true</useDDLTransformationScript>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="blt_id" id="116CB675-6282-3E38-5F84-159B9985CA16">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-30 00:46:28 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>ck_blt_nn_01</notNullConstraintName>
+</Column>
+<Column name="blt_numero" id="D6D68E14-C03C-584F-3D63-E70B4B5998E9">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-30 00:46:28 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>ck_blt_nn_02</notNullConstraintName>
+</Column>
+<Column name="blt_ano" id="8CCBFF90-3B45-CD27-4CBE-7F93359B8234">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-30 00:46:28 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>ck_blt_nn_03</notNullConstraintName>
+</Column>
+<Column name="blt_data_lev" id="D55CD56C-87F0-3104-3A7C-BC5FE75F8D10">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-30 00:46:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data em que o levantamento foi realizado]]></commentInRDBMS>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>ck_blt_nn_04</notNullConstraintName>
+</Column>
+<Column name="blt_data_cad" id="A1660FBD-BBEC-C02C-C620-664AA95BD3B8">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-30 00:46:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data em que o levantamento foi cadastrado]]></commentInRDBMS>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AF788E5B-9784-57FE-E377-661559220DD9" name="pk_blt">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-30 00:46:28 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="116CB675-6282-3E38-5F84-159B9985CA16"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4AFBF990-DD00-7BD4-BF9E-2AEC83F80B89" name="uk_blt_num_ano">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-30 00:48:43 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D6D68E14-C03C-584F-3D63-E70B4B5998E9"/>
+<colUsage columnID="8CCBFF90-3B45-CD27-4CBE-7F93359B8234"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

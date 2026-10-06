@@ -1,0 +1,144 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7AF8B7B5-3633-2FD2-8EEC-4C413AA7A4D3" name="PRODUTO_APRESENTACAO">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-30 00:28:23 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="pap_id" id="77CAEF23-C290-642A-FC56-131F5AD1DCB9">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-30 00:30:43 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>ck_pap_nn_01</notNullConstraintName>
+</Column>
+<Column name="prd_id" id="224C343E-B9FC-9DFE-FF0D-B300F67B85F2">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-30 00:30:43 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>ck_pap_nn_02</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="7545904B-9A26-4058-FCD9-D121C039AA96" referredColumn="9E1BC302-EFA2-AB60-1048-C4D8BA866DC2"/>
+</associations>
+</Column>
+<Column name="tap_id" id="17248712-8385-2C22-36EC-1948A510AD9C">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-30 00:30:43 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>ck_pap_nn_03</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="7A28CE73-7603-503C-D407-23726CC7522C" referredColumn="D5D4D765-D07B-AABB-FB41-52CFF9061A7B"/>
+</associations>
+</Column>
+<Column name="pap_qtd" id="D76DAC4B-A4E3-BD80-91D7-E9D5FD895A66">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-31 16:20:46 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="umd_id" id="62874F75-1856-D48E-5D0C-11CDF5D205F3">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-30 00:30:43 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>ck_pap_nn_04</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="72A0E9BB-C318-1F88-E529-73289FC2271E" referredColumn="B968A148-5AD5-C584-6B06-8A46F4C120F2"/>
+</associations>
+</Column>
+<Column name="pap_atv" id="D955CB09-2684-36B9-E114-0706FB8C02F3">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-30 00:30:43 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>ck_pap_nn_05</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="99F89D1D-22F3-472D-496C-56A3BDF42FEC" name="pk_pap">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-30 00:34:38 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77CAEF23-C290-642A-FC56-131F5AD1DCB9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ABA5F30B-A558-E8FD-DF9B-2C88794D920F" name="fk_pap_prd">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-30 00:33:28 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="224C343E-B9FC-9DFE-FF0D-B300F67B85F2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="37093253-B32A-73FD-4A36-E43218753554" name="fk_pap_tap">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-30 00:33:43 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="17248712-8385-2C22-36EC-1948A510AD9C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7B9BD2D2-59B9-A2E1-FFEC-DA2883A0A26D" name="fk_pap_umd">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-30 00:33:58 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="62874F75-1856-D48E-5D0C-11CDF5D205F3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="ck_pap_atv" directorySegmentName="seg_0" id="854678AB-4291-774C-9779-D31CACFCB3E0">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-31 16:44:46 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<rule><![CDATA[pap_atv in (0,1)]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

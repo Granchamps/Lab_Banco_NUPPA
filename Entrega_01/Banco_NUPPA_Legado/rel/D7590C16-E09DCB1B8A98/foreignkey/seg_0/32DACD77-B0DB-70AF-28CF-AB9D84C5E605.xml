@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="32DACD77-B0DB-70AF-28CF-AB9D84C5E605" containerWithKeyObject="A2AB3D6F-A344-660E-A51E-F7F0D7124628" localFKIndex="813A5E12-3253-F002-AAE0-5DB1A176D15C" name="fk_cat_grp">
+<createdBy>Shampz</createdBy>
+<createdTime>2026-08-29 23:40:04 UTC</createdTime>
+<ownerDesignName>Banco_NUPPA_Legado</ownerDesignName>
+<referredTableLongName>GRUPO_ALIMENTAR</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A4788ADB-2121-F9F6-2684-ADA289806F3C</referredTableID>
+<keyObject>5CB59368-A4C6-91F6-DF56-6ABC5B77F858</keyObject>
+<referredKeyID>5CB59368-A4C6-91F6-DF56-6ABC5B77F858</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>grp_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
