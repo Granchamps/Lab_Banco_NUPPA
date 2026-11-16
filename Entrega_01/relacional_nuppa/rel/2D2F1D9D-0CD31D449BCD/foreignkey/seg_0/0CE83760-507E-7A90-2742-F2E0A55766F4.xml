@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0CE83760-507E-7A90-2742-F2E0A55766F4" containerWithKeyObject="3DFE1925-24A9-1B25-8709-EF2536F302EC" localFKIndex="55C41EDD-D91D-2443-310B-93554C30E535" name="fk_pap_umd">
+<createdBy>Allan</createdBy>
+<createdTime>2026-11-16 01:27:34 UTC</createdTime>
+<ownerDesignName>relacional_nuppa</ownerDesignName>
+<referredTableLongName>UNIDADE_MEDIDA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0461AA48-ADD6-8982-152D-C29DA8DA0159</referredTableID>
+<keyObject>E239BEB9-9CA9-F6CE-ACF2-ED8A85464AB3</keyObject>
+<referredKeyID>E239BEB9-9CA9-F6CE-ACF2-ED8A85464AB3</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>umd_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

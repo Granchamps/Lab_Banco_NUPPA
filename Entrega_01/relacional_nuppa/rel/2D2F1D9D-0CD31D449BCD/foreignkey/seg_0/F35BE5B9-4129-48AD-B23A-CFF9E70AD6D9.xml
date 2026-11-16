@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F35BE5B9-4129-48AD-B23A-CFF9E70AD6D9" containerWithKeyObject="CDCB0D01-0872-531E-83D4-36C01AEB7EEA" localFKIndex="64FAAF04-4E03-2C48-5124-42AD1B65B2EA" name="fk_cot_pap">
+<createdBy>Allan</createdBy>
+<createdTime>2026-11-16 01:49:41 UTC</createdTime>
+<ownerDesignName>relacional_nuppa</ownerDesignName>
+<referredTableLongName>PRODUTO_APRESENTACAO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3DFE1925-24A9-1B25-8709-EF2536F302EC</referredTableID>
+<keyObject>5C124D1E-81E9-3FE0-6D60-DD94BCF7CE5D</keyObject>
+<referredKeyID>5C124D1E-81E9-3FE0-6D60-DD94BCF7CE5D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>pap_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

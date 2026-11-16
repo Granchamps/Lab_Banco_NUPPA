@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="74F764C3-749E-6F47-F9D4-BD376C8B6A6C" name="BOLETIM">
+<createdBy>Allan</createdBy>
+<createdTime>2026-11-16 01:38:05 UTC</createdTime>
+<ownerDesignName>relacional_nuppa</ownerDesignName>
+<ordsAlias>table_8</ordsAlias>
+<useDDLTransformationScript>true</useDDLTransformationScript>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="blt_id" id="844531EC-A0F5-90B7-1814-BCA48B85A833">
+<createdBy>Allan</createdBy>
+<createdTime>2026-11-16 01:41:06 UTC</createdTime>
+<ownerDesignName>relacional_nuppa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>ck_nn_blt_01</notNullConstraintName>
+</Column>
+<Column name="blt_num" id="E5D8BE09-C8FC-8947-BAB8-3258BC60EE98">
+<createdBy>Allan</createdBy>
+<createdTime>2026-11-16 01:41:06 UTC</createdTime>
+<ownerDesignName>relacional_nuppa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>ck_nn_blt_02</notNullConstraintName>
+</Column>
+<Column name="blt_ano" id="57FA1925-A29C-4A33-7883-9497AC47F16A">
+<createdBy>Allan</createdBy>
+<createdTime>2026-11-16 01:41:06 UTC</createdTime>
+<ownerDesignName>relacional_nuppa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>ck_nn_blt_03</notNullConstraintName>
+</Column>
+<Column name="blt_data_lev" id="F4D82DA5-3527-EA47-946D-22FD296686E8">
+<createdBy>Allan</createdBy>
+<createdTime>2026-11-16 01:41:06 UTC</createdTime>
+<ownerDesignName>relacional_nuppa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>ck_nn_blt_04</notNullConstraintName>
+</Column>
+<Column name="blt_data_cad" id="981B5396-3B9D-CD0C-A37D-D3155C592E6C">
+<createdBy>Allan</createdBy>
+<createdTime>2026-11-16 01:41:06 UTC</createdTime>
+<ownerDesignName>relacional_nuppa</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="74138177-9113-50E5-3CFE-0FBE663AE768" name="pk_blt">
+<createdBy>Allan</createdBy>
+<createdTime>2026-11-16 01:41:06 UTC</createdTime>
+<ownerDesignName>relacional_nuppa</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="844531EC-A0F5-90B7-1814-BCA48B85A833"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E208967D-D112-A611-072F-E18D4CE11616" name="uk_blt_num_ano">
+<createdBy>Allan</createdBy>
+<createdTime>2026-11-16 01:41:06 UTC</createdTime>
+<ownerDesignName>relacional_nuppa</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E5D8BE09-C8FC-8947-BAB8-3258BC60EE98"/>
+<colUsage columnID="57FA1925-A29C-4A33-7883-9497AC47F16A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

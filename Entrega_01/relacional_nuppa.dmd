@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="relacional_nuppa" id="44C7E5A5-E3AD-61B1-8DD9-D1FC9D513680" version="3.5">
+<createdBy>Allan</createdBy>
+<createdTime>2026-11-16 00:58:49 UTC</createdTime>
+<ownerDesignName>relacional_nuppa</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>44C7E5A5-E3AD-61B1-8DD9-D1FC9D513680</designId>
+</OSDM_Design>

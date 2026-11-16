@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3B2C6FD4-9F71-59E7-DD66-10EAEF6CB58A" containerWithKeyObject="CDCB0D01-0872-531E-83D4-36C01AEB7EEA" localFKIndex="DA31D6A2-631E-331B-AB02-ECBF1487E75F" name="fk_cot_blt">
+<createdBy>Allan</createdBy>
+<createdTime>2026-11-16 01:49:41 UTC</createdTime>
+<ownerDesignName>relacional_nuppa</ownerDesignName>
+<referredTableLongName>BOLETIM</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>74F764C3-749E-6F47-F9D4-BD376C8B6A6C</referredTableID>
+<keyObject>74138177-9113-50E5-3CFE-0FBE663AE768</keyObject>
+<referredKeyID>74138177-9113-50E5-3CFE-0FBE663AE768</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>blt_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

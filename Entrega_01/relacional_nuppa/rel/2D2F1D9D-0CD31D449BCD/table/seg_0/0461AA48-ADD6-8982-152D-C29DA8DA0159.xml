@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0461AA48-ADD6-8982-152D-C29DA8DA0159" name="UNIDADE_MEDIDA">
+<createdBy>Allan</createdBy>
+<createdTime>2026-11-16 01:19:41 UTC</createdTime>
+<ownerDesignName>relacional_nuppa</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<useDDLTransformationScript>true</useDDLTransformationScript>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="umd_id" id="1373D080-851C-BFB2-3E67-BACCFC4528B0">
+<createdBy>Allan</createdBy>
+<createdTime>2026-11-16 01:20:56 UTC</createdTime>
+<ownerDesignName>relacional_nuppa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>ck_nn_umd_01</notNullConstraintName>
+</Column>
+<Column name="umd_nome" id="6022F47F-E34A-DEDC-895D-590B2FC1803D">
+<createdBy>Allan</createdBy>
+<createdTime>2026-11-16 01:20:56 UTC</createdTime>
+<ownerDesignName>relacional_nuppa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>ck_nn_umd_02</notNullConstraintName>
+</Column>
+<Column name="umd_sigla" id="FD09550C-35DE-F8DB-A2E2-CB72D8936321">
+<createdBy>Allan</createdBy>
+<createdTime>2026-11-16 01:20:56 UTC</createdTime>
+<ownerDesignName>relacional_nuppa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>ck_nn_umd_03</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E239BEB9-9CA9-F6CE-ACF2-ED8A85464AB3" name="pk_umd">
+<createdBy>Allan</createdBy>
+<createdTime>2026-11-16 01:20:56 UTC</createdTime>
+<ownerDesignName>relacional_nuppa</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1373D080-851C-BFB2-3E67-BACCFC4528B0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
