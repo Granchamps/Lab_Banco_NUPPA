@@ -1,7 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="FE3769B3-CEF5-33AB-8EC6-1EEFC06729A9" mainViewID="B7677CB7-11B1-83E5-863D-891C1FA67EED">
-<createdBy>Allan</createdBy>
-<createdTime>2026-11-16 00:58:49 UTC</createdTime>
-<ownerDesignName>relacional_nuppa</ownerDesignName>
-<shouldBeOpen>false</shouldBeOpen>
-</LogicalDesign>

@@ -1,0 +1,169 @@
+--------------------------------------------------------
+--  Arquivo criado - terça-feira-novembro-24-2026   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Sequence SEQ_AUD
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "NUPPA_AUDIT"."SEQ_AUD"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 1 NOCACHE  NOORDER  NOCYCLE  NOKEEP  NOSCALE  GLOBAL
+--------------------------------------------------------
+--  DDL for Sequence SEQ_AUD_EVENTO
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "NUPPA_AUDIT"."SEQ_AUD_EVENTO"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 1 NOCACHE  NOORDER  NOCYCLE  NOKEEP  NOSCALE  GLOBAL
+  GRANT SELECT ON "NUPPA_AUDIT"."SEQ_AUD_EVENTO" TO "NUPPA"
+--------------------------------------------------------
+--  DDL for Table AUDITORIA
+--------------------------------------------------------
+
+  CREATE TABLE "NUPPA_AUDIT"."AUDITORIA" 
+   (	"AUD_ID" NUMBER(12,0) NOT NULL ENABLE, 
+	"AUD_EVENTO_ID" NUMBER(12,0) NOT NULL ENABLE, 
+	"AUD_REGISTRO_ID" NUMBER(12,0), 
+	"AUD_TABELA" VARCHAR2(30) NOT NULL ENABLE, 
+	"AUD_COLUNA" VARCHAR2(30) NOT NULL ENABLE, 
+	"AUD_VALOR_ANTIGO" VARCHAR2(4000), 
+	"AUD_VALOR_NOVO" VARCHAR2(4000), 
+	"AUD_TP_OPERACAO" CHAR(1) NOT NULL ENABLE, 
+	"AUD_DATA_ENTRADA" TIMESTAMP (6) DEFAULT SYSTIMESTAMP NOT NULL ENABLE, 
+	"AUD_BD_USER" VARCHAR2(128) NOT NULL ENABLE, 
+	"AUD_SO_USER" VARCHAR2(255), 
+	 CONSTRAINT "CK_AUD_OPERACAO" CHECK (AUD_TP_OPERACAO IN ('U', 'D')) ENABLE, 
+	 CONSTRAINT "PK_AUD" PRIMARY KEY ("AUD_ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 
+  TABLESPACE "USERS"  ENABLE
+   ) SEGMENT CREATION DEFERRED 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  TABLESPACE "USERS"
+REM INSERTING into NUPPA_AUDIT.AUDITORIA
+SET DEFINE OFF;
+--------------------------------------------------------
+--  DDL for Index IDX_AUD_DATA
+--------------------------------------------------------
+
+  CREATE INDEX "NUPPA_AUDIT"."IDX_AUD_DATA" ON "NUPPA_AUDIT"."AUDITORIA" ("AUD_DATA_ENTRADA") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  TABLESPACE "USERS"
+--------------------------------------------------------
+--  DDL for Index IDX_AUD_EVENTO
+--------------------------------------------------------
+
+  CREATE INDEX "NUPPA_AUDIT"."IDX_AUD_EVENTO" ON "NUPPA_AUDIT"."AUDITORIA" ("AUD_EVENTO_ID") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  TABLESPACE "USERS"
+--------------------------------------------------------
+--  DDL for Index IDX_AUD_REGISTRO
+--------------------------------------------------------
+
+  CREATE INDEX "NUPPA_AUDIT"."IDX_AUD_REGISTRO" ON "NUPPA_AUDIT"."AUDITORIA" ("AUD_TABELA", "AUD_REGISTRO_ID") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  TABLESPACE "USERS"
+--------------------------------------------------------
+--  DDL for Index PK_AUD
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "NUPPA_AUDIT"."PK_AUD" ON "NUPPA_AUDIT"."AUDITORIA" ("AUD_ID") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 
+  TABLESPACE "USERS"
+--------------------------------------------------------
+--  DDL for Index PK_AUD
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "NUPPA_AUDIT"."PK_AUD" ON "NUPPA_AUDIT"."AUDITORIA" ("AUD_ID") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 
+  TABLESPACE "USERS"
+--------------------------------------------------------
+--  DDL for Index IDX_AUD_EVENTO
+--------------------------------------------------------
+
+  CREATE INDEX "NUPPA_AUDIT"."IDX_AUD_EVENTO" ON "NUPPA_AUDIT"."AUDITORIA" ("AUD_EVENTO_ID") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  TABLESPACE "USERS"
+--------------------------------------------------------
+--  DDL for Index IDX_AUD_REGISTRO
+--------------------------------------------------------
+
+  CREATE INDEX "NUPPA_AUDIT"."IDX_AUD_REGISTRO" ON "NUPPA_AUDIT"."AUDITORIA" ("AUD_TABELA", "AUD_REGISTRO_ID") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  TABLESPACE "USERS"
+--------------------------------------------------------
+--  DDL for Index IDX_AUD_DATA
+--------------------------------------------------------
+
+  CREATE INDEX "NUPPA_AUDIT"."IDX_AUD_DATA" ON "NUPPA_AUDIT"."AUDITORIA" ("AUD_DATA_ENTRADA") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  TABLESPACE "USERS"
+--------------------------------------------------------
+--  DDL for Trigger TG_SEQ_AUD
+--------------------------------------------------------
+
+  CREATE OR REPLACE EDITIONABLE TRIGGER "NUPPA_AUDIT"."TG_SEQ_AUD" 
+BEFORE INSERT ON AUDITORIA FOR EACH ROW
+BEGIN
+  :NEW.AUD_ID := SEQ_AUD.NEXTVAL;
+END;
+
+ALTER TRIGGER "NUPPA_AUDIT"."TG_SEQ_AUD" ENABLE
+--------------------------------------------------------
+--  DDL for Trigger TG_SEQ_AUD
+--------------------------------------------------------
+
+  CREATE OR REPLACE EDITIONABLE TRIGGER "NUPPA_AUDIT"."TG_SEQ_AUD" 
+BEFORE INSERT ON AUDITORIA FOR EACH ROW
+BEGIN
+  :NEW.AUD_ID := SEQ_AUD.NEXTVAL;
+END;
+
+ALTER TRIGGER "NUPPA_AUDIT"."TG_SEQ_AUD" ENABLE
+--------------------------------------------------------
+--  DDL for Procedure PR_INSERE_AUDITORIA
+--------------------------------------------------------
+set define off;
+
+  CREATE OR REPLACE EDITIONABLE PROCEDURE "NUPPA_AUDIT"."PR_INSERE_AUDITORIA" (
+  P_EVENTO_ID     IN NUMBER,
+  P_REGISTRO_ID   IN NUMBER,
+  P_TABELA        IN VARCHAR2,
+  P_COLUNA        IN VARCHAR2,
+  P_VALOR_ANTIGO  IN VARCHAR2,
+  P_VALOR_NOVO    IN VARCHAR2,
+  P_TP_OPERACAO   IN CHAR,
+  P_DATA_ENTRADA  IN TIMESTAMP,
+  P_BD_USER       IN VARCHAR2,
+  P_SO_USER       IN VARCHAR2
+) IS
+BEGIN
+  IF P_TP_OPERACAO = 'U' THEN
+    IF P_VALOR_ANTIGO = P_VALOR_NOVO
+       OR (P_VALOR_ANTIGO IS NULL AND P_VALOR_NOVO IS NULL) THEN
+       RETURN;
+    END IF;
+  END IF;
+
+  INSERT INTO AUDITORIA (
+    AUD_EVENTO_ID, AUD_REGISTRO_ID, AUD_TABELA, AUD_COLUNA,
+    AUD_VALOR_ANTIGO, AUD_VALOR_NOVO, AUD_TP_OPERACAO,
+    AUD_DATA_ENTRADA, AUD_BD_USER, AUD_SO_USER
+  ) VALUES (
+    P_EVENTO_ID, P_REGISTRO_ID, P_TABELA, P_COLUNA,
+    P_VALOR_ANTIGO, P_VALOR_NOVO, P_TP_OPERACAO,
+    P_DATA_ENTRADA, P_BD_USER, P_SO_USER
+  );
+END;
+  GRANT EXECUTE ON "NUPPA_AUDIT"."PR_INSERE_AUDITORIA" TO "NUPPA"
+--------------------------------------------------------
+--  Constraints for Table AUDITORIA
+--------------------------------------------------------
+
+  ALTER TABLE "NUPPA_AUDIT"."AUDITORIA" MODIFY ("AUD_ID" NOT NULL ENABLE)
+  ALTER TABLE "NUPPA_AUDIT"."AUDITORIA" MODIFY ("AUD_EVENTO_ID" NOT NULL ENABLE)
+  ALTER TABLE "NUPPA_AUDIT"."AUDITORIA" MODIFY ("AUD_TABELA" NOT NULL ENABLE)
+  ALTER TABLE "NUPPA_AUDIT"."AUDITORIA" MODIFY ("AUD_COLUNA" NOT NULL ENABLE)
+  ALTER TABLE "NUPPA_AUDIT"."AUDITORIA" MODIFY ("AUD_TP_OPERACAO" NOT NULL ENABLE)
+  ALTER TABLE "NUPPA_AUDIT"."AUDITORIA" MODIFY ("AUD_DATA_ENTRADA" NOT NULL ENABLE)
+  ALTER TABLE "NUPPA_AUDIT"."AUDITORIA" MODIFY ("AUD_BD_USER" NOT NULL ENABLE)
+  ALTER TABLE "NUPPA_AUDIT"."AUDITORIA" ADD CONSTRAINT "CK_AUD_OPERACAO" CHECK (AUD_TP_OPERACAO IN ('U', 'D')) ENABLE
+  ALTER TABLE "NUPPA_AUDIT"."AUDITORIA" ADD CONSTRAINT "PK_AUD" PRIMARY KEY ("AUD_ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 
+  TABLESPACE "USERS"  ENABLE
